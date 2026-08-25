@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "proofId": "execution-42",
+  "evaluationTime": "2026-08-26T04:00:00.000Z",
+  "expected": {
+    "authorityHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "tenantHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "targetRevision": "revision-42",
+    "terminalArtifactSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+  },
+  "policy": {
+    "maxEvidenceAgeMs": 7200000,
+    "minimumKeyEpoch": 7,
+    "requireSingleTenant": true,
+    "requireUniqueChain": true,
+    "allowedIssuerHashes": ["dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"]
+  },
+  "nodes": [
+    { "id": "principal-1", "kind": "principal", "authorityHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "tenantHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "surfaceIdentityHash": "1111111111111111111111111111111111111111111111111111111111111111", "targetRevision": "revision-42", "keyEpoch": 7, "observedAt": "2026-08-26T03:00:00.000Z", "sourceSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" },
+    { "id": "session-1", "kind": "session", "authorityHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "tenantHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "surfaceIdentityHash": "2222222222222222222222222222222222222222222222222222222222222222", "targetRevision": "revision-42", "keyEpoch": 7, "observedAt": "2026-08-26T03:00:00.000Z", "sourceSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" },
+    { "id": "agent-1", "kind": "agent", "authorityHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "tenantHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "surfaceIdentityHash": "3333333333333333333333333333333333333333333333333333333333333333", "targetRevision": "revision-42", "keyEpoch": 7, "observedAt": "2026-08-26T03:00:00.000Z", "sourceSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" },
+    { "id": "tool-call-1", "kind": "tool-call", "authorityHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "tenantHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "surfaceIdentityHash": "4444444444444444444444444444444444444444444444444444444444444444", "targetRevision": "revision-42", "keyEpoch": 7, "observedAt": "2026-08-26T03:00:00.000Z", "sourceSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" },
+    { "id": "runtime-1", "kind": "runtime", "authorityHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "tenantHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "surfaceIdentityHash": "5555555555555555555555555555555555555555555555555555555555555555", "targetRevision": "revision-42", "keyEpoch": 7, "observedAt": "2026-08-26T03:00:00.000Z", "sourceSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" },
+    { "id": "artifact-1", "kind": "artifact", "authorityHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "tenantHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "surfaceIdentityHash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc", "targetRevision": "revision-42", "keyEpoch": 7, "observedAt": "2026-08-26T03:00:00.000Z", "sourceSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" }
+  ],
+  "bindings": [
+    { "id": "binding-1", "from": "principal-1", "to": "session-1", "relation": "initiates", "issuerHash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "assertionSha256": "6666666666666666666666666666666666666666666666666666666666666666", "validFrom": "2026-08-26T02:00:00.000Z", "validUntil": "2026-08-26T05:00:00.000Z", "revoked": false },
+    { "id": "binding-2", "from": "session-1", "to": "agent-1", "relation": "delegates", "issuerHash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "assertionSha256": "7777777777777777777777777777777777777777777777777777777777777777", "validFrom": "2026-08-26T02:00:00.000Z", "validUntil": "2026-08-26T05:00:00.000Z", "revoked": false },
+    { "id": "binding-3", "from": "agent-1", "to": "tool-call-1", "relation": "invokes", "issuerHash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "assertionSha256": "8888888888888888888888888888888888888888888888888888888888888888", "validFrom": "2026-08-26T02:00:00.000Z", "validUntil": "2026-08-26T05:00:00.000Z", "revoked": false },
+    { "id": "binding-4", "from": "tool-call-1", "to": "runtime-1", "relation": "executes", "issuerHash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "assertionSha256": "9999999999999999999999999999999999999999999999999999999999999999", "validFrom": "2026-08-26T02:00:00.000Z", "validUntil": "2026-08-26T05:00:00.000Z", "revoked": false },
+    { "id": "binding-5", "from": "runtime-1", "to": "artifact-1", "relation": "produces", "issuerHash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "assertionSha256": "0000000000000000000000000000000000000000000000000000000000000000", "validFrom": "2026-08-26T02:00:00.000Z", "validUntil": "2026-08-26T05:00:00.000Z", "revoked": false }
+  ]
+}

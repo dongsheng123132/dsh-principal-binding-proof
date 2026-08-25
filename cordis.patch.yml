@@ -1,0 +1,5 @@
+- insert:
+    - id: dsh-principal-binding-proof
+      name: dsh-principal-binding-proof
+      config:
+        workspaceRoot: .
