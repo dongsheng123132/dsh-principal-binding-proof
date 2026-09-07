@@ -1,6 +1,6 @@
 {
   "name": "dsh-principal-binding-proof",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Content-addressed proof of pseudonymous authority binding across DSH execution surfaces",
   "author": {
     "name": "dongsheng123132"
@@ -8,14 +8,24 @@
   "homepage": "https://github.com/dongsheng123132/dsh-principal-binding-proof",
   "repository": "https://github.com/dongsheng123132/dsh-principal-binding-proof",
   "license": "MIT",
-  "keywords": ["deepseek-harness", "dsh", "identity", "authority", "evidence"],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "identity",
+    "authority",
+    "evidence"
+  ],
   "interface": {
     "displayName": "DSH Principal Binding Proof",
     "shortDescription": "Verify redacted authority-binding chains.",
     "longDescription": "Verifies explicit offline receipts that bind one pseudonymous authority and tenant across principal, session, agent, tool-call, runtime and artifact surfaces without authenticating users or returning identities.",
     "developerName": "dongsheng123132",
     "category": "Developer Tools",
-    "capabilities": ["MCP tools", "DSH tools", "offline verification"],
+    "capabilities": [
+      "MCP tools",
+      "DSH tools",
+      "offline verification"
+    ],
     "defaultPrompt": "Verify this explicit principal-binding manifest and report only hashed evidence."
   },
   "mcpServers": "./.mcp.json"
