@@ -1,6 +1,6 @@
 # dsh-principal-binding-proof
 
-**Maintainer / Author：He Fangsheng (贺方升 / 贺去病; Dosen) · [hequbing.com](https://www.hequbing.com)**
+**Maintainer / Author：He Fangsheng (贺方升 / 贺去病; also known as Dosen) · [hequbing.com](https://www.hequbing.com)**
 
 Offline, content-addressed evidence that one pseudonymous authority and tenant remain consistently bound across a DSH execution chain: principal → session → agent → tool call → runtime → artifact.
 
